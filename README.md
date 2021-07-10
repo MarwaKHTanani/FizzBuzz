@@ -4,7 +4,7 @@ Using Test Driven Development to solve FizzBuzz.
 
 ## Pairing
 
-For this task, we recommend that you use the [ping pong](https://github.com/foundersandcoders/master-reference/blob/master/coursebook/week-1/pair-programming.md) pairing method.
+For this task, we recommend that you use the [ping pong](https://github.com/GSG-G10/curriculum/blob/main/coursebook/week-1/pair-programming.md) pairing method.
 
 One student starts by creating a single failing test and then the other writes code to make the test pass. When the test is passing the second student writes another failing test for the first to complete. Keep swapping roles until you complete the task.
 
@@ -64,8 +64,8 @@ We will start by writing the most simple unit test of all, a unit test that will
 ```javascript
 describe('Testing fizzbuzz return value', () => {
 	test('Should return 1 when given 1', () => {
-		var actual = fizzbuzz(1);
-		var expected = 1;
+		const actual = fizzbuzz(1);
+		const expected = 1;
 		expect(actual).toBe(expected);
 	});
 });
@@ -78,7 +78,7 @@ Our first fail is because **fizzbuzz doesn't return anything**.
 So we need to add to the function in `index.js`:
 
 ```javascript
-function fizzbuzz() {
+const fizzbuzz = () => {
 	return 1;
 }
 ```
@@ -94,9 +94,9 @@ Let’s now get the first two numbers.
 Add a unit test to `test.js` to check if our function returns 2:
 
 ```javascript
-test('Should return 2 when given 2', function(t) {
-	var actual = fizzbuzz(2);
-	var expected = 2;
+test('Should return 2 when given 2', () => {
+	const actual = fizzbuzz(2);
+	const expected = 2;
 	expect(actual).toBe(expected);
 });
 ```
@@ -108,7 +108,7 @@ We need to write just enough code to pass this test.
 Update `index.js`:
 
 ```javascript
-function fizzbuzz(number) {
+const fizzbuzz = (number) => {
 	if (number === 2) {
 		return 2;
 	}
@@ -125,9 +125,9 @@ Well, that was easy, but we're not quite there yet. Let’s now get the first th
 Let's write a test:
 
 ```javascript
-test('Should return Fizz when given 3', function(t) {
-	var actual = fizzbuzz(3);
-	var expected = 'Fizz';
+test('Should return Fizz when given 3', () => {
+	const actual = fizzbuzz(3);
+	const expected = 'Fizz';
 	expect(actual).toBe(expected);
 });
 ```
@@ -137,7 +137,7 @@ The test fails because it expects **Fizz** but gets **1**.
 Let's write enough code to pass this test.
 
 ```javascript
-function fizzbuzz(number) {
+const fizzbuzz = (number) => {
 	if (number === 3) {
 		return 'Fizz';
 	} else if (number === 2) {
@@ -156,7 +156,7 @@ so how can we make this easier to read?
 I’m thinking of removing one of the if/else statements, let’s try that:
 
 ```javascript
-function fizzbuzz(number) {
+const fizzbuzz = (number) => {
 	if (number === 3) {
 		return 'Fizz';
 	} else {
