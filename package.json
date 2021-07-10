@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/foundersandcoders/fizzbuzz#readme",
   "devDependencies": {
-    "@types/jest": "^24.9.0",
-    "jest": "^24.9.0"
+    "jest": "^27.0.6"
   }
 }

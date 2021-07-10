@@ -1,6 +1,4 @@
-'use strict';
-
-function fizzbuzz() {
+const fizzbuzz = () => {
   // write your code here
 }
 
