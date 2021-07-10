@@ -94,7 +94,7 @@ Let’s now get the first two numbers.
 Add a unit test to `test.js` to check if our function returns 2:
 
 ```javascript
-test('Should return 2 when given 2', (t) => {
+test('Should return 2 when given 2', () => {
 	const actual = fizzbuzz(2);
 	const expected = 2;
 	expect(actual).toBe(expected);
@@ -125,7 +125,7 @@ Well, that was easy, but we're not quite there yet. Let’s now get the first th
 Let's write a test:
 
 ```javascript
-test('Should return Fizz when given 3', (t) => {
+test('Should return Fizz when given 3', () => {
 	const actual = fizzbuzz(3);
 	const expected = 'Fizz';
 	expect(actual).toBe(expected);
