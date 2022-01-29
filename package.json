@@ -1,25 +1,22 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "**Author**: [@skibinska](https://github.com/skibinska)   **Maintainer**: [@skibinska](https://github.com/skibinska)",
+  "description": "Using Test Driven Development to solve FizzBuzz.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/foundersandcoders/fizzbuzz.git"
+    "url": "git+https://github.com/GSG-CA/fizzbuzz.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/foundersandcoders/fizzbuzz/issues"
+    "url": "https://github.com/GSG-CA/fizzbuzz/issues"
   },
-  "homepage": "https://github.com/foundersandcoders/fizzbuzz#readme",
+  "homepage": "https://github.com/GSG-CA/fizzbuzz#readme",
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.4.7"
   }
 }

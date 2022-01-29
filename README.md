@@ -4,7 +4,7 @@ Using Test Driven Development to solve FizzBuzz.
 
 ## Pairing
 
-For this task, we recommend that you use the [ping pong](https://github.com/GSG-G10/curriculum/blob/main/coursebook/week-1/pair-programming.md) pairing method.
+For this task, we recommend that you use the [ping pong](https://github.com/GSG-CA/curriculum/blob/main/coursebook/week-1/pair-programming.md) pairing method.
 
 One student starts by creating a single failing test and then the other writes code to make the test pass. When the test is passing the second student writes another failing test for the first to complete. Keep swapping roles until you complete the task.
 
@@ -46,7 +46,7 @@ This is also called the **Red-Green-Refactor** cycle of TDD.
 Clone the repository by copy-pasting the following command into your terminal:
 
 ```
-git clone https://github.com/GSG-G10/fizzbuzz.git && cd fizzbuzz
+git clone https://github.com/GSG-CA/fizzbuzz.git && cd fizzbuzz
 ```
 
 Install the dependencies (Jest) with:
